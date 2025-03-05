@@ -100,9 +100,11 @@ buttons.addEventListener("click", function(event){
             }
             break;
         case "AC":
+            clear();
             expression = null;
             expression = createExpression();
-            clear();
+            expression.num1 = 0;
+            display(expression.num1);
             break;
         case ".":
             break;
